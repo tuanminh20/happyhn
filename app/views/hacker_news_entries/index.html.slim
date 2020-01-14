@@ -1,0 +1,13 @@
+.card-columns
+  - @entries.each do |entry|
+    .card
+      .card-header
+        = entry.title
+      .card-body
+        h5.card-title
+          = entry.title
+        h6.card-subtitle.mb-2.text-muted
+          = entry.site
+      .card-footer.text-muted
+        = "#{entry.points} points by #{entry.username} | #{entry.num_comments} comments"
+
